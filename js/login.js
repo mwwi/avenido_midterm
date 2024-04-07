@@ -1,6 +1,8 @@
 const form = document.querySelector('form');
 const username = document.getElementById('username');
 const password = document.getElementById('password');
+const togglePasswordButton = document.getElementById('togglePassword');
+const submitButton = document.getElementById('submit');
 
 function validateUsername(username) {
     return username.length >= 6;
@@ -24,5 +26,11 @@ function formValidation(event) {
     // Assuming login is successful, redirect to index page
     window.location.href = "index.html";
 }
+
+togglePasswordButton.addEventListener('click', function() {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    togglePasswordButton.textContent = type === 'password' ? 'Show Password' : 'Hide Password';
+});
 
 form.addEventListener('submit', formValidation);
