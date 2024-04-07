@@ -101,7 +101,7 @@ form input::-webkit-input-placeholder {
 form input:focus::-webkit-input-placeholder {
   opacity: 0;
 }
-form button {
+#submit {
   border: none;
   padding: 0.85rem 1rem;
   margin-top: 2rem;
@@ -131,3 +131,68 @@ form p.success-message {
   line-height: 2rem;
   margin: 1.5rem auto 5rem auto;
 }
+
+
+
+/* CSS for the show password checkbox */
+.show-password {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.show-password input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.show-password label {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* CSS for the toggle password button */
+#togglePassword {
+  background-color: #253e61;
+  border: 6px solid #fffcd6;
+  color: white;
+  font-size: 0.75rem; /* Adjust font size */
+  text-transform: uppercase;
+  width: calc(65% - 12px); /* Adjust width to fit the container and account for border width */
+  padding: 0.85rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem; /* Ensure it stays below the password field */
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+}
+
+#togglePassword:hover {
+  border: 6px solid #fffcd6;
+  background-color: #1a2f44;
+}
+
+/* CSS for the username and password fields */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.field input {
+  padding: 8px 12px; /* Adjust padding for smaller input fields */
+  margin: 0.25rem 0; /* Adjust margins for smaller input fields */
+  border: 3px solid #ffffff; /* Reduce border size for smaller input fields */
+}
+
+/* Adjust width of the fields */
+#username,
+#password {
+  width: calc(100% - 24px); /* Adjust width to fit the container and account for border width */
+}
+
+
+
+
+
+
+
